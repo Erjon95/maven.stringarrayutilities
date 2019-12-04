@@ -373,47 +373,47 @@
 ### Example 1
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
-    
-    // : When
-    String outcome = StringArrayUtils.getSecondToLastElement(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+
+// : When
+String outcome = StringArrayUtils.getSecondToLastElement(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    lazy
-    ```
-    
-    
+```
+lazy
+```
+
+
 ### Example 2
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "lazy"};
-    
-    // : When
-    boolean outcome = StringArrayUtils.getNextToLastElement(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "lazy"};
+
+// : When
+boolean outcome = StringArrayUtils.getNextToLastElement(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    over
-    ```
+```
+over
+```
 
 
 
@@ -422,26 +422,26 @@
 ### Example 3
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"the", "quick", "brown", "fox", "jumps", "over"};
-    
-    // : When
-    boolean outcome = StringArrayUtils.getNextToLastElement(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"the", "quick", "brown", "fox", "jumps", "over"};
+
+// : When
+boolean outcome = StringArrayUtils.getNextToLastElement(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    jumps
-    ```
-    
-    
+```
+jumps
+```
+
+
     
     
     
@@ -479,49 +479,49 @@
 ### Example 1
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
-    
-    // : When
-    boolean outcome = StringArrayUtils.contains(array, "the");
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+
+// : When
+boolean outcome = StringArrayUtils.contains(array, "the");
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    true
-    ```
-    
-    
-    
+```
+true
+```
+
+
+
 
 ### Example 2
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
-    
-    // : When
-    boolean outcome = StringArrayUtils.contains(array, "potatoes");
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+
+// : When
+boolean outcome = StringArrayUtils.contains(array, "potatoes");
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    false
-    ```
+```
+false
+```
 
 
 
@@ -574,76 +574,76 @@
 ### Example 1
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
-    
-    // : When
-    boolean outcome = StringArrayUtils.contains(array, "the");
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+
+// : When
+boolean outcome = StringArrayUtils.contains(array, "the");
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    [dog, lazy, the, over, jumps, fox, brown, quick, the]
-    ```
-    
-    
-    
+```
+[dog, lazy, the, over, jumps, fox, brown, quick, the]
+```
+
+
+
 
 ### Example 2
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"Pack", "my", "box", "with", "five", "dozen", "liquor", "jugs"};
-    
-    // : When
-    boolean outcome = StringArrayUtils.contains(array, "potatoes");
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"Pack", "my", "box", "with", "five", "dozen", "liquor", "jugs"};
+
+// : When
+boolean outcome = StringArrayUtils.contains(array, "potatoes");
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    [jugs, liquor, dozen, five, with, box, my, Pack]
-    ```
+```
+[jugs, liquor, dozen, five, with, box, my, Pack]
+```
 
 
 
 
-    
+
 
 ### Example 3
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"The", "quick", "onyx", "goblin", "jumps", "over", "the", "lazy", "dwarf"};
-    
-    // : When
-    boolean outcome = StringArrayUtils.contains(array, "potatoes");
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"The", "quick", "onyx", "goblin", "jumps", "over", "the", "lazy", "dwarf"};
+
+// : When
+boolean outcome = StringArrayUtils.contains(array, "potatoes");
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    [dwarf, lazy, the, over, jumps, goblin, onyx, quick, The]
-    ```
+```
+[dwarf, lazy, the, over, jumps, goblin, onyx, quick, The]
+```
 
 
 
@@ -683,71 +683,71 @@
 ### Example 1
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"a", "b", "c", "b", "a"}
-    
-    // : When
-    boolean outcome = StringArrayUtils.isPalindrome(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"a", "b", "c", "b", "a"}
+
+// : When
+boolean outcome = StringArrayUtils.isPalindrome(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
-    ```
-    true
-    ```
+```
+true
+```
+
+
     
-    
-        
 ### Example 2
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"Is this a plaindrome?", "This is a plaindrome", "Is this a palindrome?"}
-    
-    // : When
-    boolean outcome = StringArrayUtils.isPalindrome(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"Is this a plaindrome?", "This is a plaindrome", "Is this a palindrome?"}
+
+// : When
+boolean outcome = StringArrayUtils.isPalindrome(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
-    ```
-    true
-    ```
+```
+true
+```
+
     
-        
 
 
-        
+    
 ### Example 3
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"Is this a plaindrome?", "This is not a plaindrome", "Is this a palindrome?", "This is not a palindrome"}
-    
-    // : When
-    boolean outcome = StringArrayUtils.isPalindrome(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"Is this a plaindrome?", "This is not a plaindrome", "Is this a palindrome?", "This is not a palindrome"}
+
+// : When
+boolean outcome = StringArrayUtils.isPalindrome(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
-    ```
-    false
-    ```
+```
+false
+```
 
 
 
@@ -791,46 +791,46 @@
 ### Example 1
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"The quick brown", "Fox jumps over", "The lazy dog"}
-    
-    // : When
-    boolean outcome = StringArrayUtils.isPangramic(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"The quick brown", "Fox jumps over", "The lazy dog"}
+
+// : When
+boolean outcome = StringArrayUtils.isPangramic(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
-    ```
-    true
-    ```
-    
-    
+```
+true
+```
+
+
 ### Example 2
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"The", "quick", "onyx", "goblin", "jumps", "over", "the", "lazy", "dwarf"};
-    
-    // : When
-    boolean outcome = StringArrayUtils.isPangramic(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"The", "quick", "onyx", "goblin", "jumps", "over", "the", "lazy", "dwarf"};
+
+// : When
+boolean outcome = StringArrayUtils.isPangramic(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
-    ```
-    true
-    ```
-   
+```
+true
+```
+
 
 
 
@@ -872,72 +872,72 @@
 ### Example 1
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
-    
-    // : When
-    int numberOfOccurrences = StringArrayUtils.getNumberOfOccurrences(array, "bba");
-    
-    // : Then
-    System.out.println(numberOfOccurrences);
-    ```
+```
+// : Given
+String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
+
+// : When
+int numberOfOccurrences = StringArrayUtils.getNumberOfOccurrences(array, "bba");
+
+// : Then
+System.out.println(numberOfOccurrences);
+```
 
 
 
 * Sample Output
 
-    ```
-    4
-    ```
-    
-    
-    
+```
+4
+```
+
+
+
 
 ### Example 2
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
-    
-    // : When
-    int numberOfOccurrences = StringArrayUtils.getNumberOfOccurrences(array, "bbb");
-    
-    // : Then
-    System.out.println(numberOfOccurrences);
-    ```
+```
+// : Given
+String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
+
+// : When
+int numberOfOccurrences = StringArrayUtils.getNumberOfOccurrences(array, "bbb");
+
+// : Then
+System.out.println(numberOfOccurrences);
+```
 
 
 
 * Sample Output
 
-    ```
-    2
-    ```
-    
+```
+2
+```
+
 
 ### Example 3
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
-    
-    // : When
-    int numberOfOccurrences = StringArrayUtils.getNumberOfOccurrences(array, "baa");
-    
-    // : Then
-    System.out.println(numberOfOccurrences);
-    ```
+```
+// : Given
+String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
+
+// : When
+int numberOfOccurrences = StringArrayUtils.getNumberOfOccurrences(array, "baa");
+
+// : Then
+System.out.println(numberOfOccurrences);
+```
 
 
 
 * Sample Output
 
-    ```
-    1
-    ```
+```
+1
+```
 
 
 
