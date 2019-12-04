@@ -981,23 +981,23 @@ System.out.println(numberOfOccurrences);
 ### Example 1
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
-    
-    // : When
-    String[] actual = StringArrayUtils.removeConsecutiveDuplicates(array);
-    
-    // : Then
-    System.out.println(Arrays.toString(actual));
-    ```
+```
+// : Given
+String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
+
+// : When
+String[] actual = StringArrayUtils.removeConsecutiveDuplicates(array);
+
+// : Then
+System.out.println(Arrays.toString(actual));
+```
 
 
 
 * Sample Output
-    ```
-    [aba, baa, bab, bba, bbb];
-    ```
+```
+[aba, baa, bab, bba, bbb];
+```
 
 
 
@@ -1005,23 +1005,23 @@ System.out.println(numberOfOccurrences);
 ### Example 2
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"aba", "aba", "baa", "bab", "bba", "zzz", "bba", "bba", "bba", "bbb", "bbb"};
-    
-    // : When
-    String[] actual = StringArrayUtils.removeConsecutiveDuplicates(array);
-    
-    // : Then
-    System.out.println(Arrays.toString(actual));
-    ```
+```
+// : Given
+String[] array = {"aba", "aba", "baa", "bab", "bba", "zzz", "bba", "bba", "bba", "bbb", "bbb"};
+
+// : When
+String[] actual = StringArrayUtils.removeConsecutiveDuplicates(array);
+
+// : Then
+System.out.println(Arrays.toString(actual));
+```
 
 
 
 * Sample Output
-    ```
-    [aba, baa, bab, bba, zzz, bba, bbb];
-    ```
+```
+[aba, baa, bab, bba, zzz, bba, bbb];
+```
 
 
 
@@ -1029,23 +1029,23 @@ System.out.println(numberOfOccurrences);
 ### Example 3
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"aba", "aba", "baa", "bab", "bba", "zzz", "bba", "bba", "bba", "bbb", "bbb", "aba", "bbb"};
-    
-    // : When
-    String[] actual = StringArrayUtils.removeConsecutiveDuplicates(array);
-    
-    // : Then
-    System.out.println(Arrays.toString(actual));
-    ```
+```
+// : Given
+String[] array = {"aba", "aba", "baa", "bab", "bba", "zzz", "bba", "bba", "bba", "bbb", "bbb", "aba", "bbb"};
+
+// : When
+String[] actual = StringArrayUtils.removeConsecutiveDuplicates(array);
+
+// : Then
+System.out.println(Arrays.toString(actual));
+```
 
 
 
 * Sample Output
-    ```
-    [aba, baa, bab, bba, zzz, bba, aba, bbb];
-    ```
+```
+[aba, baa, bab, bba, zzz, bba, aba, bbb];
+```
 
 
 
@@ -1092,67 +1092,67 @@ System.out.println(numberOfOccurrences);
 ### Example 1
 * Sample Script
 
-    ```
-    // : Given
-	String[] array = {"a", "a", "a", "a", "b", "c", "c", "a", "a", "d"};
-	
-    // : When
-    String[] actual = StringArrayUtils.packConsecutiveDuplicates(array);
-    
-    // : Then
-    System.out.println(Arrays.toString(actual));
-    ```
+```
+// : Given
+String[] array = {"a", "a", "a", "a", "b", "c", "c", "a", "a", "d"};
+
+// : When
+String[] actual = StringArrayUtils.packConsecutiveDuplicates(array);
+
+// : Then
+System.out.println(Arrays.toString(actual));
+```
 
 
 
 * Sample Output
-    ```
-    [aaa, b, cc, aa, d, eee];
-    ```
+```
+[aaa, b, cc, aa, d, eee];
+```
 
 
 ### Example 2
 * Sample Script
 
-    ```
-    // : Given
-	String[] array = {"t", "t", "q", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e"}; 
-	
-    // : When
-    String[] actual = StringArrayUtils.packConsecutiveDuplicates(array);
-    
-    // : Then
-    System.out.println(Arrays.toString(actual));
-    ```
+```
+// : Given
+String[] array = {"t", "t", "q", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e"}; 
+
+// : When
+String[] actual = StringArrayUtils.packConsecutiveDuplicates(array);
+
+// : Then
+System.out.println(Arrays.toString(actual));
+```
 
 
 
 * Sample Output
-    ```
-    [tt, q, aaa, b, cc, aa, d, eee];
-    ```
+```
+[tt, q, aaa, b, cc, aa, d, eee];
+```
 
 
 ### Example 3
 * Sample Script
 
-    ```
-    // : Given
-	String[] array = {"m", "o", "o", "n", "m", "a", "n"}
-	
-    // : When
-    String[] actual = StringArrayUtils.packConsecutiveDuplicates(array);
-    
-    // : Then
-    System.out.println(Arrays.toString(actual));
-    ```
+```
+// : Given
+String[] array = {"m", "o", "o", "n", "m", "a", "n"}
+
+// : When
+String[] actual = StringArrayUtils.packConsecutiveDuplicates(array);
+
+// : Then
+System.out.println(Arrays.toString(actual));
+```
 
 
 
 * Sample Output
-    ```
-    [m, oo, n, m, a, n];
-    ```
+```
+[m, oo, n, m, a, n];
+```
 
 
 
