@@ -62,47 +62,47 @@
 ### Example 1
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
-    
-    // : When
-    String outcome = StringArrayUtils.getFirstElement(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+
+// : When
+String outcome = StringArrayUtils.getFirstElement(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    quick
-    ```
-    
-    
+```
+quick
+```
+
+
 ### Example 2
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"brown", "fox", "jumps", "over", "the", "lazy", "dog"};
-    
-    // : When
-    String outcome = StringArrayUtils.getFirstElement(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+
+// : When
+String outcome = StringArrayUtils.getFirstElement(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    brown
-    ```
+```
+brown
+```
 
 
 
@@ -111,24 +111,24 @@
 ### Example 3
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"fox", "jumps", "over", "the", "lazy", "dog"};
-    
-    // : When
-    String outcome = StringArrayUtils.getFirstElement(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"fox", "jumps", "over", "the", "lazy", "dog"};
+
+// : When
+String outcome = StringArrayUtils.getFirstElement(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    fox
-    ```
+```
+fox
+```
 
 
 
@@ -160,68 +160,68 @@
 ### Example 1
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
-    
-    // : When
-    String outcome = StringArrayUtils.getSecondElement(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+
+// : When
+String outcome = StringArrayUtils.getSecondElement(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    quick
-    ```
-    
+```
+quick
+```
+
     
 ### Example 2
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};    
-    // : When
-    String outcome = StringArrayUtils.getFirstElement(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};    
+// : When
+String outcome = StringArrayUtils.getFirstElement(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    brown
-    ```
+```
+brown
+```
 
 
 ### Example 3
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"brown", "fox", "jumps", "over", "the", "lazy", "dog"};    
-    // : When
-    String outcome = StringArrayUtils.getFirstElement(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"brown", "fox", "jumps", "over", "the", "lazy", "dog"};    
+// : When
+String outcome = StringArrayUtils.getFirstElement(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    fox
-    ```
+```
+fox
+```
 
 
 
@@ -264,47 +264,47 @@
 ### Example 1
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
-    
-    // : When
-    String outcome = StringArrayUtils.getLastElement(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+
+// : When
+String outcome = StringArrayUtils.getLastElement(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    dog
-    ```
-    
-    
+```
+dog
+```
+
+
 ### Example 2
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy"};
-    
-    // : When
-    String outcome = StringArrayUtils.getLastElement(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy"};
+
+// : When
+String outcome = StringArrayUtils.getLastElement(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    lazy
-    ```
+```
+lazy
+```
 
 
 
@@ -313,27 +313,27 @@
 ### Example 3
 * Sample Script
 
-    ```
-    // : Given
-    String[] array = {"the", "quick", "brown", "fox", "jumps", "over"};
-    
-    // : When
-    String outcome = StringArrayUtils.getLastElement(array);
-    
-    // : Then
-    System.out.println(outcome);
-    ```
+```
+// : Given
+String[] array = {"the", "quick", "brown", "fox", "jumps", "over"};
+
+// : When
+String outcome = StringArrayUtils.getLastElement(array);
+
+// : Then
+System.out.println(outcome);
+```
 
 
 
 * Sample Output
 
-    ```
-    the
-    ```
-    
-    
-    
+```
+the
+```
+
+
+
 
 
 
