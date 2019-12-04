@@ -1,4 +1,4 @@
-package com.zipcodewilmington;
+package com.github.perschola;
 
 import org.junit.Assert;
 import org.junit.Test;

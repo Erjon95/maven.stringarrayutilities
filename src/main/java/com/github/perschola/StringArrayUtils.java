@@ -1,4 +1,4 @@
-package com.zipcodewilmington;
+package com.github.perschola;
 
 /**
  * Created by leon on 1/29/18.
@@ -9,7 +9,7 @@ public class StringArrayUtils {
      * @return first element of specified array
      */ // TODO
     public static String getFirstElement(String[] array) {
-        return array[0];
+        return null;
     }
 
     /**
@@ -17,7 +17,7 @@ public class StringArrayUtils {
      * @return second element in specified array
      */
     public static String getSecondElement(String[] array) {
-        return array[1];
+        return null;
     }
 
     /**
@@ -57,16 +57,16 @@ public class StringArrayUtils {
      * @param array array of String objects
      * @return true if the order of the array is the same backwards and forwards
      */ // TODO
-    public static boolean isPalindromic(String[] array) {
-        return false;
+    public static Boolean isPalindromic(String[] array) {
+        return null;
     }
 
     /**
      * @param array array of String objects
      * @return true if each letter in the alphabet has been used in the array
      */ // TODO
-    public static boolean isPangramic(String[] array) {
-        return false;
+    public static Boolean isPangramic(String[] array) {
+        return null;
     }
 
     /**

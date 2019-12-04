@@ -1,6 +1,6 @@
 ## Building Utility Class for String Array Objects
 * **Objective**
-    * Ensure [StringArrayUtilsTest](https://github.com/Zipcoder/CR-MicroLabs-Arrays-StringArrayUtilities/blob/master/src/test/java/com/zipcodewilmington/StringArrayUtilsTest.java) passes each test by completing the methods [stubbed out](https://en.wikipedia.org/wiki/Method_stub) in the class [StringArrayUtils](https://github.com/Zipcoder/CR-MicroLabs-Arrays-StringArrayUtilities/blob/master/src/main/java/com/zipcodewilmington/StringArrayUtils.java)
+    * Ensure `StringArrayUtilsTest` passes each test by completing the methods [stubbed out](https://en.wikipedia.org/wiki/Method_stub) in the class `StringArrayUtils`
         * `String getFirstElement(String[] array)`
         * `String getSecondElement(String[] array)`
         * `String getLastElement(String[] array)`
