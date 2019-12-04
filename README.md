@@ -54,7 +54,7 @@
 
 
 
-<br><br><br><br>
+
 ## `String getFirstElement(String[] array)`
 * **Description**
     * Given an array of `String` objects, return the first element of the array.
@@ -152,7 +152,7 @@
 
 
 
-<br><br><br><br>
+
 ## `String getSecondElement(String[] array)`
 * **Description**
    * Given an array of `String` objects, return the first element of the array.
@@ -256,7 +256,7 @@
 
 
 
-<br><br><br><br>
+
 ## `String getLastElement(String[] array)`
 * **Description**
    * Given an array of `String` objects, return the last element of the array.
@@ -365,7 +365,7 @@
 
 
 
-<br><br><br><br>
+
 ## `String getSecondToLastElement(String[] array)`
 * **Description**
    * Given an array of `String` objects, return the next-to-last element of the array.
@@ -471,7 +471,7 @@
 
 
 
-<br><br><br><br>
+
 ## `boolean contains(String[] array, String value)`
 * **Description**
    * Given an array of `String` objects named `array` and a `String` object named `value`<br>return true if `value` appears in `arrays`.
@@ -566,7 +566,7 @@
 
 
 
-<br><br><br><br>
+
 ## `String[] reverse(String[] array)`
 * **Description**
    * Given an array of `String` objects, return an array with identical contents in reverse order.
@@ -674,7 +674,7 @@
 
 
 
-<br><br><br><br>
+
 ## `boolean isPalindromic(String[] array)`
 * **Description**
     * A [palindrome](http://www.dictionary.com/browse/palindromic) is a sequence that is the same backwards and forwards.
@@ -782,7 +782,7 @@
 
 
 
-<br><br><br><br>
+
 ## `boolean isPangramic(String[] array)`
 * **Description**
     * A [pangram](http://www.dictionary.com/browse/pangram) is a sequence that contains all letters of the alphabet.
@@ -864,7 +864,7 @@
 
 
 
-<br><br><br><br>
+
 ## `int getNumberOfOccurrences(String[] array, String value)`
 * **Description**
     * Given an array of `String` objects named `array` and a `String` object named `value`<br>return the number of times `value` appears in `arrays`
@@ -971,7 +971,7 @@
 
 
 
-<br><br><br><br>
+
 ## `String[] removeConsecutiveDuplicates(String[] array)`
 * **Description**
     * Given an array of `String` objects, return an array of Strings with conseuctive duplicates removed.
@@ -1083,7 +1083,7 @@
 
 
 
-<br><br><br><br>
+
 ## `String[] packConsecutiveDuplicates(String[] array)`
 * **Description**
     * Given an array of `char` objects, return an array of Strings with consecutive duplicates placed in an array.
@@ -1180,7 +1180,7 @@
 
 
 
-<br><br><br><br>
+
 ## `String[] removeValues(String[] array, String valueToRemove)`
 * **Description**
     * Given an array of `String` objects named `array` and a `String` object named `valueToRemove`<br>create and return an array containing identical contents excluding objects whose value is equivalent to `valueToRemove`. Ensure that the length of the newly created array has been resized based on the removal of the undesired elements. 
