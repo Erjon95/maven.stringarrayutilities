@@ -143,7 +143,30 @@ public class StringArrayUtils {
         if (!contains(array, valueToRemove))
             return array;
 
-        int indexOfNewArray = 0;
+        if (getLastElement(array).equals(valueToRemove)) {
+            array[array.length - 1] = null;
+            return array;
+        }
+
+        else
+        {
+            int index = 0;
+
+            for (int i = 0; i < array.length; i++) {
+                if (array[i].equals(valueToRemove)) {
+                    index = i;
+                    break;
+                }
+            }
+
+            for (int i = (index + 1); i < array.length; i++)
+                array[i - 1] = array[i];
+            array[array.length - 1] = null;
+
+            return array;
+        }
+
+        /*int indexOfNewArray = 0;
         int difference = getNumberOfOccurrences(array, valueToRemove);
 
         String [] newArray = new String[array.length - difference];
@@ -153,9 +176,9 @@ public class StringArrayUtils {
                 newArray[indexOfNewArray] = array[i];
                 indexOfNewArray++;
             }
-        }
+        }*/
 
-        return newArray;
+        //return newArray;
     }
 
     /**

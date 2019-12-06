@@ -44,14 +44,14 @@ public class RemoveValueTest {
     @Test
     public void testRemoveValue3() {
         String[] array = {"The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
-        String[] expected = {"the", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+        String[] expected = {"The", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
         test1(array, expected);
     }
 
     @Test
     public void testRemoveValue4() {
         String[] array = {"The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
-        String[] expected = {"the", "quick", "brown", "fox", "over", "the", "lazy", "dog"};
+        String[] expected = {"The", "quick", "brown", "fox", "over", "the", "lazy", "dog"};
         test2(array, expected);
     }
 
