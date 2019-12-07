@@ -1,7 +1,6 @@
 package com.github.perschola;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by leon on 1/29/18.
@@ -62,12 +61,16 @@ public class StringArrayUtils {
      */ // TODO
     public static String[] reverse(String[] array) {
 
-        String [] reverseArray = new String [array.length];
         int length = array.length;
+        String temp;
 
-        for(int i = 0; i < length; i++)
-            reverseArray [i] = array [length - 1 -i];
-        return reverseArray;
+        for(int i = 0; i < (length/2); i++) {
+            temp = array[length - 1 - i];
+            array[length - 1 - i] = array[i];
+            array[i] = temp;
+        }
+
+        return array;
     }
 
     /**
@@ -94,23 +97,19 @@ public class StringArrayUtils {
      */ // TODO
     public static Boolean isPangramic(String[] array) {
 
-        int letter = 97;
-        Set<Integer> alphabet = new HashSet<Integer>();
+        Set<Integer> alphabet = new HashSet<>();
 
         for (int i = 65; i < 91; i++)
             alphabet.add(i);
 
         for (int k = 65; k < 91; k++)
-            for (int i = 0; i < array.length; i++)
-                for (int j = 0; j < array[i].length(); j++) {
-                    if (((int) array[i].charAt(j) == k) || ((int) array[i].charAt(j) == (k + 32)))
+            for (String s : array)
+                for (int j = 0; j < s.length(); j++) {
+                    if (((int) s.charAt(j) == k) || ((int) s.charAt(j) == (k + 32)))
                         alphabet.remove(k);
                 }
 
-        if (alphabet.isEmpty())
-            return true;
-        else
-            return false;
+        return alphabet.isEmpty();
     }
 
     /**
@@ -125,10 +124,9 @@ public class StringArrayUtils {
         if (!contains(array, value))
             return 0;
         else {
-            for (int i = 0; i < array.length; i++) {
-                if (array[i].equals(value))
+            for (String s : array)
+                if (s.equals(value))
                     occurrence++;
-            }
             return occurrence;
         }
     }
@@ -143,42 +141,15 @@ public class StringArrayUtils {
         if (!contains(array, valueToRemove))
             return array;
 
-        if (getLastElement(array).equals(valueToRemove)) {
-            array[array.length - 1] = null;
-            return array;
+        List<String> newArray = new ArrayList<>();
+
+        for (String s : array) {
+            if (!s.equals(valueToRemove)) {
+                newArray.add(s);
+            }
         }
 
-        else
-        {
-            int index = 0;
-
-            for (int i = 0; i < array.length; i++) {
-                if (array[i].equals(valueToRemove)) {
-                    index = i;
-                    break;
-                }
-            }
-
-            for (int i = (index + 1); i < array.length; i++)
-                array[i - 1] = array[i];
-            array[array.length - 1] = null;
-
-            return array;
-        }
-
-        /*int indexOfNewArray = 0;
-        int difference = getNumberOfOccurrences(array, valueToRemove);
-
-        String [] newArray = new String[array.length - difference];
-
-        for (int i = 0; i < array.length; i++) {
-            if (!array[i].equals(valueToRemove)) {
-                newArray[indexOfNewArray] = array[i];
-                indexOfNewArray++;
-            }
-        }*/
-
-        //return newArray;
+        return newArray.toArray(new String[0]);
     }
 
     /**
@@ -186,7 +157,12 @@ public class StringArrayUtils {
      * @return array of Strings with consecutive duplicates removes
      */ // TODO
     public static String[] removeConsecutiveDuplicates(String[] array) {
-        return null;
+
+        List<String> result = new ArrayList<>(Arrays.asList(packConsecutiveDuplicates(array)));
+
+        result.removeIf(s -> s.length() > 1);
+
+        return result.toArray(new String[0]);
     }
 
     /**
@@ -194,7 +170,39 @@ public class StringArrayUtils {
      * @return array of Strings with each consecutive duplicate occurrence concatenated as a single string in an array of Strings
      */ // TODO
     public static String[] packConsecutiveDuplicates(String[] array) {
-        return null;
+
+        int startIndex, endIndex;
+        startIndex = 0;
+        endIndex = startIndex + 1;
+        List<String> newArray = new ArrayList<>();
+
+        while (endIndex < array.length)
+        {
+
+            boolean duplicate = true;
+            StringBuilder temp = new StringBuilder(array[startIndex]);
+
+            while (duplicate && (endIndex < array.length))
+            {
+                if (array[startIndex].equals(array[endIndex])) {
+                    temp.append(array[endIndex]);
+                    endIndex++;
+                    duplicate = true;
+                }
+                else
+                    duplicate = false;
+            }
+
+            newArray.add(temp.toString());
+            startIndex = endIndex;
+            endIndex++;
+
+            if (startIndex == (array.length - 1) && (endIndex == array.length)) {
+                newArray.add(array[startIndex]);
+                break;
+            }
+        }
+        return newArray.toArray(new String[0]);
     }
 
 
